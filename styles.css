@@ -1,0 +1,64 @@
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+ background-color: #f0f8ff; /* Alice Blue */
+    color: #333; /* Dark gray text for contrast */
+}
+header{
+    background-image: url('/images/TEHRAN.jpg');
+    background-size: cover; /* Makes the image cover the entire header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating if the image is smaller than the header */
+    height: 400px; /* Adjust this height as per your needs */
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centers the text vertically */
+    justify-content: center; /* Centers the text horizontally */
+    }
+    
+    header h1{
+        font-size: 50px;
+    }
+    .explation {
+        padding: 5%;
+    }
+    #image-gallery {
+    display: flex;
+    justify-content: space-around; /* Evenly space images */
+    margin: 20px;
+    padding: 20px;
+}
+    #milad{
+       width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow to the images */
+    transition: transform 0.3s ease; 
+    margin:0 auto;
+    
+    }
+    .image{
+           width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow to the images */
+    transition: transform 0.3s ease; 
+    margin:0 auto;/* Smooth hover effect */
+    }
+    .pargraph{
+        width: 20%;
+        margin:0 auto;
+        
+    }
+    #box{
+   display: grid;
+    place-items: center;     /* Centers content both horizontally and vertically */
+    height: 100vh;           /* Full viewport height */
+    text-align: center;        
+    }
+    .idea{
+        line-height: 1.6;
+    }
+   
