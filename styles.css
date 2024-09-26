@@ -54,7 +54,8 @@ header{
     }
     #box{
    display: grid;
-    place-items: center;     /* Centers content both horizontally and vertically */
+   width: 80%;
+   place-items: center;     /* Centers content both horizontally and vertically */
     height: 100vh;           /* Full viewport height */
     text-align: center;        
     }
