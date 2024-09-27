@@ -4,6 +4,8 @@ Install the dependencies and run the project
 npm install
 npm start
 ```
+## About websit 
+It's about my HomeTwon I just try some futuer of html and css I learned in Hometown website
 
 Head over to https://vitejs.dev/ to learn more about configuring vite
 ## About Scrimba
