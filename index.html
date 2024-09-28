@@ -10,7 +10,7 @@
     <title>Welcome to Tehran</title>
 </head>
 <body>
-    <header>
+     <header>
         <h1>Welcome to TEHRAN</h1>
     </header>
 
@@ -23,15 +23,21 @@
 
     <section id="image-gallery">
         <div class="box">
-            <img id="milad" src="/images/milad.jpg" alt="Milad Tower">
+            <img id="milad" src="/images/milad.jpg" alt="Milad Tower" onclick="openModal(this.src, 'Milad Tower')">
             <p class="paragraph">Milad Tower, standing at 435 meters (1,427 feet), is the tallest tower in Iran and the sixth-tallest telecommunications tower in the world. Located in Tehran, it is a striking symbol of the city's modernization and technological advancement.</p>
         </div>
         <div class="box">
-            <img class="image" src="/images/Teheran_20190808122956.jpg" alt="Tehran Cityscape">
+            <img class="image" src="/images/Teheran_20190808122956.jpg" alt="Tehran Cityscape" onclick="openModal(this.src, 'Tehran Cityscape')">
             <p class="paragraph">Tehran boasts a diverse and evolving transportation system that caters to its large population. The city is served by a comprehensive network of buses, including the Bus Rapid Transit (BRT) system, which provides efficient and affordable travel across key routes. The Tehran Metro, one of the largest subway systems in the Middle East, offers a reliable alternative to road traffic, connecting various districts and reducing congestion.</p>
         </div>
     </section>
 
+    <!-- Modal for enlarged images -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
        
 
 <ul id="ulstyle">
@@ -70,5 +76,23 @@
   <li><a href="https://blocks.codeyourfuture.io/share.html?v=38aeb168-6e12-4f34-87be-5b366f8adbe2">Loops and arrays: more fun with fruit</a></li>
   </ul>
         </ul>
+        <script>
+        // Function to open the modal
+        function openModal(src, alt) {
+            const modal = document.getElementById("modal");
+            const modalImage = document.getElementById("modal-image");
+            const caption = document.getElementById("caption");
+            
+            modal.style.display = "block"; // Show the modal
+            modalImage.src = src; // Set the image source
+            caption.innerHTML = alt; // Set the caption text
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            const modal = document.getElementById("modal");
+            modal.style.display = "none"; // Hide the modal
+        }
+    </script>
     </body>
 </html>
